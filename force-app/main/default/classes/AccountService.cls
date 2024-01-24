@@ -1,9 +1,9 @@
 public with sharing class AccountService {
-    public Account createAccount( String accountName, String accountNumber, String tickerSymbol ) {
+    public Account createAccount( String accountName, String accountNumber ) {
       Account newAcct = new Account(
         Name = accountName,
-        AccountNumber = accountNumber,
-        TickerSymbol = accountNumber
+        AccountNumber = accountNumber
+       // TickerSymbol = accountNumber
       );
       return newAcct;
     }
